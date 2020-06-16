@@ -1,0 +1,34 @@
+body {
+  margin: 10px;
+  font-family: Verdana;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.about {
+  margin-left: auto;
+}
+
+.container>div {
+ flex: 1;
+}
+
+.container > .services {
+  flex: 2;
+}
+
+.container>div:nth-child(1) {
+  background-color: #84b0f8;
+}
+
+.container>div:nth-child(2) {
+  background-color: #f2857c;
+}
+
+.container>div:nth-child(3) {
+  background-color: #fcd35d;
+}
