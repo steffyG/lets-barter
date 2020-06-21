@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import LineGraph from "../components/graphs/line_graph";
+import MarketData from "../lib/market_data";
 
 const graph = {
     padding: "10px",
@@ -10,15 +10,12 @@ const graph = {
 };
 
 
-
 export default function Index() {
     return (
         <Layout>
             <div className="Content">
                 <div style={graph}>
-
-                    <LineGraph/>
-
+                    <MarketData/>
                     <br/>
                 </div>
             </div>
