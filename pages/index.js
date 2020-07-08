@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import MarketData from "../lib/market_data";
+import {authInitialProps} from "../lib/auth";
 
 const graph = {
     padding: "10px",
@@ -9,10 +10,9 @@ const graph = {
     color: "black"
 };
 
-
-export default function Index() {
+export default function Index(props) {
     return (
-        <Layout>
+        <Layout {...props}>
             <div className="Content">
                 <div style={graph}>
                     <MarketData/>
@@ -26,3 +26,5 @@ export default function Index() {
         </Layout>
     )
 }
+
+Index.getInitialProps = authInitialProps();
